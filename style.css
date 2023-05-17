@@ -1,0 +1,272 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* CSS Variables */
+
+
+/* Navigation var */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+
+
+/* logo and image */
+.logo3{
+    height: 45px;
+    width: 45px;
+    border-radius: 200px;
+}
+
+#logo img{
+    height: 56px;
+    width: 56px;
+    margin: 3px 6px;
+}
+
+
+
+
+/* list style */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+#navbar ul li{
+   list-style-type: none;
+   font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+    color: White;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+}
+
+#navbar ul li a:hover{
+    color: rgb(15, 2, 2);
+  background-color: white;
+
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 622px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Serif Toto', serif;
+}
+
+#home::before{
+    content: "";
+   background:url("spaghetti-6639970_1920.jpg") no-repeat center center/cover;
+   position: absolute;
+   height: 630px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.9;
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.9;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.9;
+}
+
+/* services center */
+.services-container h1{
+    
+    text-align: center;
+    font-size: 1.9;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+#services .box img{
+
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+
+#services p{
+    font-family: 'Bebas Neue', sans-serif;
+}
+/* #services{}
+#services{}
+#services{} */
+
+
+/* clint section */
+#clint-section{
+    position: relative;
+    height: 344px;
+}
+#clint-section::before{
+    content:"";
+    position: absolute;
+    background: url(spaghetti-6639970_1920.jpg);
+    width: 100%;
+    height: 95%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clint-item{
+    padding: 34px;
+}
+#clints img{
+    height: 100px;
+    width: 80px;
+}
+
+
+/* contact section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url(computer-1185626_1920.jpg) no-repeat center center/cover;
+ }
+ #contact-box{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;
+
+ }
+ #contact-box input,
+ #contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 10px;
+font-size: 1.1rem;
+
+ }
+ #contact-box form{
+    width: 40%;
+ }
+
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+
+ }
+
+
+
+ footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+ }
+
+
+/* Utility class */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Noto Serif Toto', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:brown ;
+    color: white;
+    margin: 17px;
+    font-size: 1.5;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
+
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:rgb(187, 150, 150) ;
+    height: 38px;
+    width: 120px;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.head2{
+text-align: right;
+color: blue;
+    font-style: bold;
+    font-weight: italic;
+}
